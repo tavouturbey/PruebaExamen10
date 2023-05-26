@@ -1,0 +1,11 @@
+public class Fibonacci {
+  public static int fibonacci(int posicion) {
+    if (posicion < 0) {
+      return -1;
+    }
+    if (posicion == 0 || posicion == 1) {
+      return posicion;
+    }
+    return fibonacci(posicion - 1) + fibonacci(posicion - 2);
+  }
+}
